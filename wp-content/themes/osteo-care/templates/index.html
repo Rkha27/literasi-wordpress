@@ -1,0 +1,39 @@
+<!-- wp:template-part {"slug":"header","theme":"osteo-care","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|50"},"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group"
+	style="margin-top:var(--wp--preset--spacing--60);padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--50)">
+	<!-- wp:heading {"level":1} -->
+	<h1 class="wp-block-heading">Latest posts</h1>
+	<!-- /wp:heading -->
+
+	<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"excludeCurrent":null},"metadata":{"patternName":"osteo-care/query","name":"Query","categories":["posts"]},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+		<!-- wp:post-featured-image {"isLink":true,"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}}}} /-->
+
+		<!-- wp:post-title {"isLink":true,"fontSize":"x-large"} /-->
+
+		<!-- wp:post-excerpt {"moreText":"Read more","excerptLength":15,"fontSize":"medium"} /-->
+
+		<!-- wp:spacer {"height":"1rem"} -->
+		<div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-no-results -->
+		<!-- wp:paragraph -->
+		<p>No results found.</p>
+		<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+
+		<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"space-between"}} -->
+		<!-- wp:query-pagination-previous /-->
+		<!-- wp:query-pagination-numbers /-->
+		<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+	</div>
+	<!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"osteo-care","tagName":"footer","className":"site-footer"} /-->

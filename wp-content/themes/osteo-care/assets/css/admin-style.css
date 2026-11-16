@@ -1,0 +1,144 @@
+/* Admin Dashboard Styles */
+.osteo-care-dashboard {
+    max-width: 1100px;
+    margin: 30px 20px 30px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.osteo-logo-header {
+    background: #fff;
+    padding: 30px 30px 0 30px;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e4e7;
+    border-bottom: none;
+}
+
+.header-branding {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.header-branding h1 {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+    color: #1e1e1e;
+}
+
+.header-branding .version {
+    font-size: 13px;
+    font-weight: 500;
+    background: #0a525922;
+    color: #0a5259;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-left: 8px;
+}
+
+.header-branding .description {
+    margin: 0;
+    color: #646970;
+    font-size: 14px;
+}
+
+/* Tabs Navigation UI */
+.nav-tab-wrapper {
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid #e2e4e7 !important;
+    display: flex;
+    gap: 8px;
+}
+
+.nav-tab {
+    font-weight: 600 !important;
+    padding: 12px 24px !important;
+    font-size: 14px !important;
+    border-radius: 8px 8px 0 0 !important;
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+    color: #50575e !important;
+    background: #f6f7f7 !important;
+    border: 1px solid #e2e4e7 !important;
+    border-bottom: none !important;
+    margin: 0 !important;
+}
+
+.nav-tab-active, .nav-tab:hover {
+    background: #fff !important;
+    border-top: 3px solid #0a5259 !important;
+    color: #0a5259 !important;
+}
+
+/* Tab Content Area */
+.tab-content {
+    background: #fff;
+    padding: 35px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e4e7;
+    min-height: 400px;
+}
+
+.dashboard-card {
+    background: #ffffff;
+}
+
+.dashboard-card h2 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e1e1e;
+    font-size: 18px;
+    border-bottom: 2px solid #f0f0f1;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.dashboard-card h2 .dashicons {
+    color: #0a5259;
+    font-size: 22px;
+}
+
+.form-table th {
+    width: 220px;
+    padding: 20px 10px 20px 0;
+    font-weight: 600;
+}
+
+.form-table td {
+    padding: 15px 10px 15px 0;
+}
+
+.form-table input[type="text"],
+.form-table input[type="email"],
+.form-table select {
+    border-radius: 6px;
+    padding: 6px 12px;
+    border-color: #8c8f94;
+}
+
+.dashboard-footer {
+    padding: 20px;
+    text-align: center;
+    color: #888;
+}
+
+.button.button-primary.button-hero {
+    display: inline-flex !important;
+    align-items: center;
+    background: #0a5259 !important;
+    border-color: #0a5259 !important;
+    text-shadow: none !important;
+    box-shadow: 0 2px 5px rgba(140, 132, 231, 0.3) !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.button.button-primary.button-hero:hover {
+    background: #7971d6 !important;
+    border-color: #7971d6 !important;
+    transform: translateY(-1px);
+}
